@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015/Debian) (preloaded format=xelatex 2018.4.27)  27 MAY 2018 10:00
+This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015/Debian) (preloaded format=xelatex 2018.4.27)  27 MAY 2018 11:13
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1236,37 +1236,40 @@ File: images/Quadcopter_RotorDirection.png Graphic file (type QTm)
 ]
 File: images/Quadcopter_Movement.png Graphic file (type QTm)
 
-<use  "images/Quadcopter_Movement.png" > [3]
+<use  "images/Quadcopter_Movement.png" > (./main/euler_angles.tex [3]
 File: images/Quadcopter_EulerAngles.png Graphic file (type QTm)
 
-<use  "images/Quadcopter_EulerAngles.png" > [4
+<use  "images/Quadcopter_EulerAngles.png" >) (./main/quaternions.tex [4
+
+])
+[5
 
 ]
 LaTeX Font Info:    Font shape `EU1/THSarabunNew(0)/bx/n' will be
-(Font)              scaled to size 9.83997pt on input line 224.
+(Font)              scaled to size 9.83997pt on input line 171.
 LaTeX Font Info:    Font shape `EU1/THSarabunNew(0)/bx/n' will be
-(Font)              scaled to size 7.37997pt on input line 224.
- [5
+(Font)              scaled to size 7.37997pt on input line 171.
+ [6
 
-] [6]
+] [7]
 บทที่ 3.
-[7
+[8
 
 ]
 บทที่ 4.
-[8
+[9
 
 ]
 บทที่ 5.
 No file report.bbl.
-[9
+[10
 
 ]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 288.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 288.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 235.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 235.
  (./report.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 288.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 288.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 235.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 235.
 
 
 LaTeX Font Warning: Size substitutions with differences
@@ -1275,15 +1278,15 @@ LaTeX Font Warning: Size substitutions with differences
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 288.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 235.
  ) 
 Here is how much of TeX's memory you used:
- 32507 strings out of 495579
- 613731 string characters out of 6187322
- 710262 words of memory out of 5000000
- 35376 multiletter control sequences out of 15000+600000
+ 32516 strings out of 495579
+ 613875 string characters out of 6187322
+ 710420 words of memory out of 5000000
+ 35378 multiletter control sequences out of 15000+600000
  9965 words of font info for 70 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  62i,13n,63p,10431b,678s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on report.pdf (12 pages).
+Output written on report.pdf (13 pages).

@@ -1,0 +1,57 @@
+\clearpage
+\subsection{Euler angles}
+มุมออยเลอร์เป็นมุม 3 มุมที่คิดโดย Leonhard Euler เพื่อที่จะเอาไว้ใช้อธิบายการเอียงของวัตถุในปริภูมิ
+ใช้ตัวแปรเพียงแค่ 3 ตัวเท่านั้น การบอกมุมออยเลอร์สามารถบอกได้หลายวิธี ในที่นี้เราใช้ ZYX Euler angles
+ในการอธิบายมุมเอียงของเฟรมอ้างอิงที่เราสนใจเทียบกับเฟรมอ้างอิงเฟรมอื่น มุมออยเลอร์เกิดจากการหมุนเฟรมรอบแกนสามแกน
+มาหมุนเรียงต่อกัน ต่อไปจะเป็นการรวมแมทริกการหมุนสามแกนเข้าด้วยกัน
+
+\begin{equation}
+	{R_{x}(\phi) = \begin{bmatrix}
+		1 & 0 & 0 \\
+		0 & c(\phi) & -s(\phi) \\
+		0 & s(\phi) & c(\phi)
+		\end{bmatrix}}
+	\label{equ:rotation_matrix_x}
+\end{equation}
+
+\begin{equation}
+	{R_{y}(\theta) = \begin{bmatrix}
+		c(\theta) & 0 & s(\theta) \\
+		0 & 1 & 0 \\
+		-s(\theta) & 0 & c(\theta)
+		\end{bmatrix}}
+	\label{equ:rotation_matrix_y}
+\end{equation}
+
+\begin{equation}
+	{R_{z}(\psi) = \begin{bmatrix}
+		c(\psi) & -s(\psi) & 0 \\
+		s(\psi) & c(\psi) & 0 \\
+		0 & 0 & 1 \\
+		\end{bmatrix}}
+	\label{equ:rotation_matrix_z}
+\end{equation}
+
+โดยที่ $c(\phi) = cos(\phi)$, $s(\phi) = sin(\phi)$, $c(\theta) = cos(\theta)$, $s(\theta) = sin(\theta)$, $c(\psi) = cos(\psi)$, $s(\psi) = sin(\psi)$
+จากแมทริกการหมุนแสดงให้เห็นว่า \quotes{Inertial frame} และ \quotes{ฺBody frame}
+มีความสัมพันธ์กันเป็นแมทริกการหมุนคือ $R_{zyx}(\phi,\theta,\psi)$
+\begin{equation}
+	\begin{array}{c}
+		{R_{zyx}(\phi,\theta,\psi) = R_{z}(\psi)R_{y}(\theta)R_{x}(\phi)}\\
+		{= \begin{bmatrix}
+		c(\theta)c(\psi) & s(\phi)s(\theta)c(\psi)-c(\phi)s(\psi) & c(\phi)s(\theta)c(\psi)+s(\phi)s(\psi) \\
+		c(\theta)s(\psi) & s(\phi)s(\theta)c(\psi)+c(\phi)s(\psi) & c(\phi)s(\theta)c(\psi)-s(\phi)c(\psi) \\
+		-s(\theta)       & s(\phi)c(\theta)                       & c(\phi)c(\theta)                       \\
+		\end{bmatrix}}
+		\label{equ:rotation_matrix_zyx}
+	\end{array}
+\end{equation}
+
+แมทริกจากสมการที่ \ref{equ:rotation_matrix_zyx} เป็นแมทริกที่อธิบายถึงการหมุนจาก \quotes{ฺBody frame} ไปยัง \quotes{Inertial frame}
+ดังรูปที่ \ref{fig:quadroter_eulerangles}
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[width=0.65\textwidth]{images/Quadcopter_EulerAngles.png}
+	\caption{ภาพแสดงการบอกแมทริกการหมุนของ Body frame}
+	\label{fig:quadroter_eulerangles}
+\end{figure}

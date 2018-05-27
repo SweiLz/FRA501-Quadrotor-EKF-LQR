@@ -34,6 +34,7 @@
 \usepackage{fancyvrb} %% สำหรับสร้างกล่อง Code
 \fvset{frame=single,framesep=1mm,framerule=0.5mm}
 \usepackage{amsmath} %% สำหรับเขียนสมการ
+
 % \usepackage{lipsum}
 % \usepackage{makeidx}
 \newcommand{\quotes}[1]{``#1''} %% สร้างกล่องคำพูด
