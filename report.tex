@@ -113,113 +113,16 @@
 	\label{fig:quadroter_movement}
 \end{figure}
 
-\input{main/euler_angles}
-\input{main/quaternions}
+\input{quadrotor_math_model/euler_quaternion}
+\input{quadrotor_math_model/quadrotor_model}
+\input{quadrotor_math_model/motor_model}
+
+
+% https://www2.eecs.berkeley.edu/Pubs/TechRpts/2012/EECS-2012-241.pdf
+% https://www.kth.se/polopoly_fs/1.588039!/Thesis%20KTH%20-%20Francesco%20Sabatino.pdf
 
 \clearpage
-\subsection{Qaudroter mathematical model}
-ในส่วนนี้จะเป็นการอธิบายสมการการเคลื่อนที่ของโดรน โดยใช้สมการของ Newton และ Euler มาช่วยในการอธิบายพลวัต (Dynamics) ของโดรน
-เพื่อใช้ทำแบบจำลอง (Simulating) และควบคุม (Controlling) ท่าทางของโดรนด้วย
-เริ่มจากให้ $[\begin{matrix}x & y & z & \phi & \theta & \psi \end{matrix}]^T$ เป็นเวกเตอร์ที่บอกตำแหน่งและมุม (linear/angular position)
-ของโดรนโดยเทียบจากเฟรมโลก (Inertial frame) และ $[\begin{matrix}u & v & w & p & q & r\end{matrix}]^T$ เป็นเวกเตอร์ที่บอกความเร็วเชิงเส้นและความเร็วเชิงมุม
-(linear/angular velocity) ของโดนโดยเทียบจากเฟรมโดรน (Body frame) พลวัตของโดรนจะเปิดจากเฟรมอ้างอิงสองเฟรมนี้มีความสัมพันธ์กัน
-
-\begin{equation}
-	\begin{array}{c}
-		{\nu = R\nu_{B}}               \\
-		{\omega = T\omega_{B}}         
-		\label{equ:equation_of_motion} 
-	\end{array}
-\end{equation}
-
-โดยที่ $\nu = [\begin{matrix}\dot{x} & \dot{y} & \dot{z} \end{matrix}]^T$, $\omega = [\begin{matrix}\dot\phi & \dot\theta & \dot\psi \end{matrix}]^T$,
-$\nu_{B} = [\begin{matrix}u & v & w \end{matrix}]^T$, $\omega_{B} = [\begin{matrix}p & q & r \end{matrix}]^T$ และ $T$
-เป็นแมทริกการแปลงมุมการหมุน (angular transformation)
-\begin{equation}
-	{T = \begin{bmatrix}
-		1 & s(\phi)t(\theta) & c(\phi)t(\theta) \\
-		0 & c(\phi) & -s(\phi) \\
-		0 & \dfrac{s(\phi)}{c(\theta)}  & \dfrac{c(\phi)}{c(\theta)} \\
-		\end{bmatrix}}
-	\label{equ:angular_transformation}
-\end{equation}
-
-โดยที่ $t(\theta) = tan(\theta)$ ดังนั้นเราจะได้สมการจลศาสตร์ (Kinematic model) ของโดรนเป็น
-\begin{equation}
-	{\begin{bmatrix}
-		\dot{x}  \\
-		\dot{y}  \\
-		\dot{z} \\
-		\dot{\phi} \\
-		\dot{\theta} \\
-		\dot{\psi} \\
-		\end{bmatrix} = 
-		\begin{bmatrix}
-			w[s(\phi)s(\psi)+c(\phi)c(\psi)s(\theta)]-v[c(\phi)s(\psi)-c(\psi)s(\phi)s(\theta)]+u[c(\psi)c(\theta)] \\
-			v[c(\phi)c(\psi)+s(\phi)s(\psi)s(\theta)]-w[c(\psi)s(\phi)-c(\phi)s(\psi)s(\theta)]+u[c(\theta)s(\psi)] \\
-			w[c(\phi)c(\theta)]-u[s(\theta)]+v[c(\theta)s(\phi)]                                                    \\
-			p+r[c(\phi)t(\theta)]+q[s(\phi)t(\theta)]                                                               \\
-			q[c(\phi)]-r[s(\phi)]                                                                                   \\
-			r\dfrac{c(\phi)}{c(\theta)}+q\dfrac{s(\phi)}{c(\theta)}                                                 \\
-		\end{bmatrix}	}
-	\label{equ:kinematic model}
-\end{equation}
-
-จากกฎของนิวตันระบุความสัมพันธ์ของแรงรวมที่กระทำต่อโดรนดังเมทริกซ์ต่อไปนี้
-
-\begin{equation}
-	{ m(\omega_B\wedge \nu_B+\dot{\nu_B})=\mathbf{f}_B}
-	\label{equ:total force}
-\end{equation}
-
-โดย $m$ คือน้ำหนักของโดรน , $\wedge$ คือ cross product และ $\mathbf{f}_B=\begin{bmatrix}f_x & f_y & f_z \end{bmatrix}^T \in \mathbf{R}^3$ 
-คือแรงรวม
-\\ จากสมการออยเลอร์ ให้แรงบิดรวมที่ใช้กับโดรน เป็นไปดังนี้
-
-\begin{equation}
-	{
-		I.\dot{\omega}_B+\omega_B\wedge(I.\omega_B)=\mathbf{m}_B
-	}
-	\label{equ:total force}
-\end{equation}
-\\
-โดย $\mathbf{m}_B=\begin{bmatrix}m_x & m_y & m_z\end{bmatrix}^T \in \mathbf{R}^3$ เป็นแรงบิดรวม และ $I$ เป็นเมทริกซ์ของความเฉื่อย :
-\begin{equation}
-	{
-		I = \begin{bmatrix}I_x & 0 & 0 \\
-		0   & I_y & 0 \\
-		0   & 0 & I_z \\
-		\end{bmatrix} \wedge \mathbf{R}^{3\times3}
-	}
-	\label{equ:inertia matrix}
-\end{equation}
-
-ดังนั้น จะได้ dynamic model ของโดรนโดยอ้างอิง body frame ดังนี้
-\begin{equation}
-	{
-		\begin{bmatrix}	f_x \\
-			f_y \\
-			f_z \\
-			m_x \\
-			m_y \\
-			m_z \\   
-		\end{bmatrix} = 
-		\begin{bmatrix}	m(\dot{u}+qw-rv) \\
-			m(\dot{v}-pw+ru)       \\
-			m(\dot{w}+pv-qu)       \\
-			\dot{p}I_x-qrI_y+qrI_z \\
-			\dot{q}I_y+prI_x-prI_z \\
-			\dot{r}I_z-pqI_x+pqI_y \\   
-		\end{bmatrix}
-	}
-	\label{equ:dynamic model}
-\end{equation}
-
-ซึ่งระบบต่าง ๆ จะเป็นไปตามสมการข้างต้นเมื่อกำหนดให้จุด origin และ body frame ตรงกับจุดเซนทรอยด์และ principal axes ของโดรน
-
-% https://www.kth.se/polopoly_fs/1.588039!/Thesis%20KTH%20-%20Francesco%20Sabatino.pdf
-\section{Explicit MPC Control}
-% https://www2.eecs.berkeley.edu/Pubs/TechRpts/2012/EECS-2012-241.pdf
+\section{Linear Quadratic Regulator}
 
 
 \chapter{Simulation}

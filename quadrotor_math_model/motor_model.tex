@@ -1,0 +1,47 @@
+\clearpage
+\subsection{Motor model}
+ในแต่ละใบพัดของ quadrotor จะให้แรงที่มีทิศทางตรงข้ามกับแกน $Z$ ของ body frame
+แรงที่เกิดจากการหมุนจะทำให้เกิดแรงบิดรอบแนวแกน roll pitch yaw โดยแรงและแรงบิดจะขึ้นอยู่กับความเร็วของใบพัดและค่าคงที่ค่าหนึ่ง
+ซึ่งสามารถแสดงความสัมพันธ์ของแรงได้ดังสมการที่ \ref{equ:force_equ} และความสัมพันธ์ของแรงบิดได้ดังสมการที่ \ref{equ:torque_equ}
+
+\begin{equation}
+    {F_i = k_f\Omega_i^2}
+	\label{equ:force_equ}
+\end{equation}
+
+\begin{equation}
+    {T_i = -k_tsgn(i)\Omega_i^2}
+	\label{equ:torque_equ}
+\end{equation}
+
+โดยที่ตัวห้อย $i$ จะแสดงถึงลำดับของใบพัดแต่ละตัว $\Omega_i$ แสดงถึงความเร็วการหมุนของใบพัด $i$
+$k_f$ และ $k_t$ เป็นค่าคงที่การคูณของแรงและแรงบิด $sgn$ เป็นฟังก์ชันที่ใช้บอกทิศทางการหมุนของใบพัดที่มีความแตกต่างกันตามการติดตั้ง
+แรงทั้งหมดที่เกิดบน quadrotor สามารถที่จะเขียนสมการให้อยู่ในรูปของความเร็วการหมุนของใบพัดคูณกับแมทริกการแปลง $M$ ดังสมการที่ \ref{equ:map_force_torque}
+
+\begin{equation}
+    {\begin{bmatrix} 
+    F \\[10pt] \tau_\phi \\[10pt] \tau_\theta \\[10pt] \tau_\psi \\
+    \end{bmatrix} = M\begin{bmatrix}
+    \Omega_1^2 \\[10pt]
+    \Omega_2^2 \\[10pt]
+    \Omega_3^2 \\[10pt]
+    \Omega_4^2 \\       
+    \end{bmatrix}}
+	\label{equ:map_force_torque}
+\end{equation}
+
+โดยที่ แมทริกการแปลง $M$ มีการกำหนดไว้ดังสมการที่ \ref{equ:map_matrix}
+
+\begin{equation}
+    {M = \begin{bmatrix}
+    k_f & k_f & k_f & k_f \\[10pt]
+    \frac{k_fd}{\sqrt{2}} & -\frac{k_fd}{\sqrt{2}} & -\frac{k_fd}{\sqrt{2}} & \frac{k_fd}{\sqrt{2}}  \\[10pt]
+    \frac{k_fd}{\sqrt{2}} & \frac{k_fd}{\sqrt{2}} & -\frac{k_fd}{\sqrt{2}} & -\frac{k_fd}{\sqrt{2}}  \\[10pt]
+    k_t & -k_t & k_t & -k_t \\
+    \end{bmatrix}}
+	\label{equ:map_matrix}
+\end{equation}
+
+โดยที่ $\Omega_i^2$ เป็นความเร็วการหมุนของใบพัดกำลังสอง และ $d$ คือระยะทางจากจุดศูนย์กลางมวลของ quadrotor ไปถึงจุดกึ่งกลางของใบพัด
+
+

@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015/Debian) (preloaded format=xelatex 2018.4.27)  27 MAY 2018 11:13
+This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015/Debian) (preloaded format=xelatex 2018.4.27)  27 MAY 2018 21:37
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -926,11 +926,7 @@ File: block.tss 2016/03/15
 (/usr/share/texlive/texmf-dist/tex/latex/lipsum/lipsum.sty
 Package: lipsum 2014/07/27 v1.3 150 paragraphs of Lorem Ipsum dummy text
 \c@lips@count=\count173
-)) (./report.aux
-
-LaTeX Warning: Label `equ:total force' multiply defined.
-
-)
+)) (./report.aux)
 \openout1 = `report.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 3.
@@ -949,7 +945,8 @@ LaTeX Font Info:    Checking defaults for EU1/lmr/m/n on input line 3.
 LaTeX Font Info:    ... okay on input line 3.
 LaTeX Font Info:    Checking defaults for T3/cmr/m/n on input line 3.
 LaTeX Font Info:    Try loading font information for T3+cmr on input line 3.
- (/usr/share/texmf/tex/latex/tipa/t3cmr.fd
+
+(/usr/share/texmf/tex/latex/tipa/t3cmr.fd
 File: t3cmr.fd 2001/12/31 TIPA font definitions
 )
 LaTeX Font Info:    ... okay on input line 3.
@@ -1040,6 +1037,9 @@ LaTeX Info: Redefining \nameref on input line 3.
 \@outlinefile=\write5
 \openout5 = `report.out'.
 
+
+
+Package hyperref Warning: Rerun to get /PageLabels entry.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: xetex
@@ -1209,11 +1209,14 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
 
 
 
-] (./report.toc)
+]
+
+Package hyperref Warning: old toc file detected, not used; run LaTeX again.
+
 \tf@toc=\write6
 \openout6 = `report.toc'.
 
- [2
+[2
 
 
 ]
@@ -1227,66 +1230,119 @@ LaTeX Font Info:    Font shape `EU1/THSarabunNew(0)/m/n' will be
 (Font)              scaled to size 17.71193pt on input line 59.
 LaTeX Font Info:    Font shape `EU1/THSarabunNew(0)/bx/n' will be
 (Font)              scaled to size 17.71193pt on input line 59.
+
+LaTeX Warning: Reference `fig:quadroter_coordinates' on page 2 undefined on inp
+ut line 67.
+
 File: images/Quadcopter_Coordinates.png Graphic file (type QTm)
 <use  "images/Quadcopter_Coordinates.png" >
-File: images/Quadcopter_RotorDirection.png Graphic file (type QTm)
 
-<use  "images/Quadcopter_RotorDirection.png" > [2
+LaTeX Warning: Reference `fig:quadroter_rotordirection' on page 2 undefined on 
+input line 85.
+
+
+LaTeX Warning: Reference `fig:quadroter_rotordirection' on page 2 undefined on 
+input line 86.
+
+File: images/Quadcopter_RotorDirection.png Graphic file (type QTm)
+<use  "images/Quadcopter_RotorDirection.png" >
+
+LaTeX Warning: Reference `fig:quadroter_movement' on page 2 undefined on input 
+line 107.
+
+[2
 
 ]
 File: images/Quadcopter_Movement.png Graphic file (type QTm)
+ <use  "images/Quadcopter_Movement.png" >
+(./quadrotor_math_model/euler_quaternion.tex [3]
 
-<use  "images/Quadcopter_Movement.png" > (./main/euler_angles.tex [3]
+LaTeX Warning: Reference `equ:rotation_matrix_zyx' on page 4 undefined on input
+ line 51.
+
+
+LaTeX Warning: Reference `fig:quadroter_eulerangles' on page 4 undefined on inp
+ut line 52.
+
 File: images/Quadcopter_EulerAngles.png Graphic file (type QTm)
+<use  "images/Quadcopter_EulerAngles.png" > [4
 
-<use  "images/Quadcopter_EulerAngles.png" >) (./main/quaternions.tex [4
+]
 
-])
-[5
+LaTeX Warning: Reference `equ:euler2quat' on page 5 undefined on input line 65.
+
+
+
+LaTeX Warning: Reference `equ:quat2rot' on page 5 undefined on input line 83.
+
+) (./quadrotor_math_model/quadrotor_model.tex [5
 
 ]
 LaTeX Font Info:    Font shape `EU1/THSarabunNew(0)/bx/n' will be
-(Font)              scaled to size 9.83997pt on input line 171.
+(Font)              scaled to size 9.83997pt on input line 54.
 LaTeX Font Info:    Font shape `EU1/THSarabunNew(0)/bx/n' will be
-(Font)              scaled to size 7.37997pt on input line 171.
- [6
+(Font)              scaled to size 7.37997pt on input line 54.
+)
+(./quadrotor_math_model/motor_model.tex [6
 
 ] [7]
+
+LaTeX Warning: Reference `equ:force_equ' on page 8 undefined on input line 5.
+
+
+LaTeX Warning: Reference `equ:torque_equ' on page 8 undefined on input line 5.
+
+
+LaTeX Warning: Reference `equ:map_force_torque' on page 8 undefined on input li
+ne 19.
+
+
+LaTeX Warning: Reference `equ:map_matrix' on page 8 undefined on input line 33.
+
+
+) [8
+
+] [9
+
+]
 บทที่ 3.
-[8
+[10
 
 ]
 บทที่ 4.
-[9
+[11
 
 ]
 บทที่ 5.
 No file report.bbl.
-[10
+[12
 
 ]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 235.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 235.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 138.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 138.
  (./report.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 235.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 235.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 138.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 138.
 
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 0.72pt have occurred.
 
 
-LaTeX Warning: There were multiply-defined labels.
+LaTeX Warning: There were undefined references.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 235.
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 138.
  ) 
 Here is how much of TeX's memory you used:
- 32516 strings out of 495579
- 613875 string characters out of 6187322
- 710420 words of memory out of 5000000
- 35378 multiletter control sequences out of 15000+600000
+ 32518 strings out of 495579
+ 614085 string characters out of 6187322
+ 708224 words of memory out of 5000000
+ 35379 multiletter control sequences out of 15000+600000
  9965 words of font info for 70 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  62i,13n,63p,10431b,678s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on report.pdf (13 pages).
+Output written on report.pdf (15 pages).
