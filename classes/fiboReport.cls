@@ -22,7 +22,7 @@
 \usepackage{verbatim} %% สำหรับใส่ Code programming
 \usepackage{graphicx} %% สำหรับใส่ รูปภาพ
 \usepackage[hidelinks]{hyperref} %% สำหรับใส่ URL
-
+\usepackage{subcaption} %% สำหรับจัดการ subfigure
 \usepackage{setspace} %% จัดการช่องว่าง
 \usepackage{geometry} %% สำหรับจัดขอบหน้ากระดาษ
 \usepackage{fancyhdr} %% สำหรับจัดการ Page layout
@@ -34,7 +34,7 @@
 \usepackage{fancyvrb} %% สำหรับสร้างกล่อง Code
 \fvset{frame=single,framesep=1mm,framerule=0.5mm}
 \usepackage{amsmath} %% สำหรับเขียนสมการ
-
+\usepackage{enumitem} %% สำหรับเรียงไอเทม
 % \usepackage{lipsum}
 % \usepackage{makeidx}
 \newcommand{\quotes}[1]{``#1''} %% สร้างกล่องคำพูด
@@ -69,6 +69,9 @@
 \newcommand\frontmatter{\cleardoublepage\pagenumbering{arabic}
 \renewcommand{\thepage}{\thaialph{page}}}
 
+
+%% ตั้งค่าให้ลำดับรูปภาษาไทย
+\renewcommand*{\thesubfigure}{\thaialph{subfigure}}
 %% ตั้งค่าให้หน้าไปแสดงที่ขอบขวาบน
 \pagestyle{fancy}
 \fancyhf{}
