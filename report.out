@@ -24,10 +24,11 @@
 \BOOKMARK [2][-]{subsection.3.2.1}{Altitude\040control}{section.3.2}% 24
 \BOOKMARK [2][-]{subsection.3.2.2}{Attitude\040control}{section.3.2}% 25
 \BOOKMARK [2][-]{subsection.3.2.3}{X\040Y\040Position\040control}{section.3.2}% 26
-\BOOKMARK [1][-]{section.3.3}{Gazebo\040and\040Rviz}{chapter.3}% 27
-\BOOKMARK [2][-]{subsection.3.3.1}{สั่งให้ quadrotor บินขึ้นเหนือพื้น}{section.3.3}% 28
-\BOOKMARK [2][-]{subsection.3.3.2}{สั่งให้ quadrotor บินวนเป็นเกลียว}{section.3.3}% 29
-\BOOKMARK [2][-]{subsection.3.3.3}{สั่งให้ quadrotor บินเป็นรูปดาว}{section.3.3}% 30
-\BOOKMARK [0][-]{chapter.4}{Analysis/Discussion}{}% 31
-\BOOKMARK [0][-]{chapter.5}{Conclusion}{}% 32
-\BOOKMARK [0][-]{chapter.5}{เอกสารอ้างอิง}{}% 33
+\BOOKMARK [1][-]{section.3.3}{Linear Quadratic Regulator กับ Path Planning}{chapter.3}% 27
+\BOOKMARK [1][-]{section.3.4}{Gazebo\040and\040Rviz}{chapter.3}% 28
+\BOOKMARK [2][-]{subsection.3.4.1}{สั่งให้ quadrotor บินขึ้นเหนือพื้น}{section.3.4}% 29
+\BOOKMARK [2][-]{subsection.3.4.2}{สั่งให้ quadrotor บินวนเป็นเกลียว}{section.3.4}% 30
+\BOOKMARK [2][-]{subsection.3.4.3}{สั่งให้ quadrotor บินเป็นรูปดาว}{section.3.4}% 31
+\BOOKMARK [0][-]{chapter.4}{Analysis/Discussion}{}% 32
+\BOOKMARK [0][-]{chapter.5}{Conclusion}{}% 33
+\BOOKMARK [0][-]{chapter.5}{เอกสารอ้างอิง}{}% 34
