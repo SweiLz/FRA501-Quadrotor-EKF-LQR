@@ -1,0 +1,47 @@
+\clearpage
+\section{Linear Quadratic Regulator}
+ในส่วนนี้จะกล่าวถึงตัวควบคุม LQR ซึ่งเป็นส่วนที่ใช้ในการควบคุม quadrotor โดยจะแบ่งออกเป็นสองส่วนควบคุม
+ตำแหน่งและทิศทางการหมุนสามารถอ้างอิงและควบคุมได้โดยตรง ส่วน Roll และ Pitch ไม่สามารถควบคุมได้โดยตรง
+แต่จะควบคุมผ่านตำแหน่ง x และ y
+
+ตัวควบคุม LQR ถูกพัฒนามาเพื่อใช้กับระบบที่มีการควบคุม inputs และ output เพื่อที่จะหาตัวควบคุม state feedback
+ที่มีประสิทธิ์ภาพมากที่สุด
+
+สมมุติให้ Linear state spcae model ของ quadrotor เป็นดังสมการที่ \ref{equ:linear_state_spcae_model}
+
+\begin{equation}
+    {\dot{x} = Ax + Bu}
+	\label{equ:linear_state_spcae_model}
+\end{equation}
+
+โดยที่ $A$ เป็น state matrix, $B$ เป็น input matrix, $x$ เป็น state vector ที่มีจำนวนตัวเท่ากับ $n$ ตัว,
+และ $u$ เป็น input vector ที่มีจำนวนตัวเท่ากับ $m$ ตัว โดยทั้ง $A$, $B$ จะต้องตรวจสอบก่อนว่าระบบเราสามารถที่จะควบคุมได้หรือไม่
+
+ตัวควบคุม LQR สามารถออกแบบให้มีประสิทธิ์ภาพสูงสุดได้โดยที่ยังควบคุมระบบได้ เป้าหมายหลักก็คือการหาค่า feedback gain $K$,
+ผลลัพธ์การควบคุมที่ดีที่สุดโดยการ minimizes cost function ตามสมการที่ \ref{equ:cost_func}
+\begin{equation}
+    {๋J = \int_{0}^{\infty} (x^TQx+u^TRu) dt}
+	\label{equ:cost_func}
+\end{equation}
+
+โดยที่ $Q$ และ $R$ เป็นนำหนักของ input และ state ถ้าหาก $Q$ มีค่ามากหมายความว่าความถูกต้องของ state มีความสำคัญมาก
+และควรจะมีค่าความผิดพลาดน้อยเพื่อที่จะทำให้ cost ของ J น้อย และ $R$ ก็คล้ายๆกันหากมีค่ามากหมายความว่าการใช้ input มีความสำคัญมาก
+
+ผลลัพธ์ของ control input จาก feedback gain ดังสมการที่ \ref{equ:feedback_gain}
+\begin{equation}
+    {๋u = -Kx}
+	\label{equ:feedback_gain}
+\end{equation}
+
+โดยที่ $K$ เป็น feedback gain และสามารถหาได้จากสมการที่ \ref{equ:feedback_gain_equ}
+\begin{equation}
+    {๋K = R^{-1}B^TP}
+	\label{equ:feedback_gain_equ}
+\end{equation}
+
+โดยที่ $P$ เป็นสิ่งที่เราต้องหาเพื่อใช้ในการหา $K$ จากการแก้สมการของ Riccati ดังสมการที่ \ref{equ:riccati_algebraic}
+\begin{equation}
+    {๋A^TP+PA+Q-PBR^{-1}B^TP = 0}
+	\label{equ:riccati_algebraic}
+\end{equation}
+

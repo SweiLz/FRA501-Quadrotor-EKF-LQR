@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015/Debian) (preloaded format=xelatex 2018.4.27)  28 MAY 2018 22:13
+This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015/Debian) (preloaded format=xelatex 2018.4.27)  28 MAY 2018 23:27
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1284,12 +1284,17 @@ LaTeX Font Info:    Font shape `EU1/THSarabunNew(0)/bx/n' will be
 )
 (./quadrotor_math_model/motor_model.tex [5
 
-]) [6
-
-] [7
+]) (./quadrotor_math_model/lqr.tex
+[6
 
 ]
-(./hector_quadrotor/hector_quadrotor.tex
+Missing character: There is no ๋ in font cmmi12!
+Missing character: There is no ๋ in font cmmi12!
+Missing character: There is no ๋ in font cmmi12!
+Missing character: There is no ๋ in font cmmi12!
+) [7
+
+] (./hector_quadrotor/hector_quadrotor.tex
 LaTeX Font Info:    Font shape `EU1/THSarabunNew(0)/m/n' will be
 (Font)              scaled to size 12.29996pt on input line 22.
 LaTeX Font Info:    Font shape `EU1/THSarabunNew(0)/m/n' will be
@@ -1398,11 +1403,11 @@ No file report.bbl.
 [21
 
 ]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 146.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 146.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 145.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 145.
  (./report.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 146.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 146.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 145.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 145.
 
 
 LaTeX Font Warning: Size substitutions with differences
@@ -1411,13 +1416,13 @@ LaTeX Font Warning: Size substitutions with differences
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 146.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 145.
  ) 
 Here is how much of TeX's memory you used:
- 33968 strings out of 495579
- 640983 string characters out of 6187322
- 736755 words of memory out of 5000000
- 36770 multiletter control sequences out of 15000+600000
+ 33975 strings out of 495579
+ 641151 string characters out of 6187322
+ 737045 words of memory out of 5000000
+ 36775 multiletter control sequences out of 15000+600000
  10475 words of font info for 79 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  62i,13n,63p,10431b,678s stack positions out of 5000i,500n,10000p,200000b,80000s
