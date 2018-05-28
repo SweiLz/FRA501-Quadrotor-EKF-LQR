@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015/Debian) (preloaded format=xelatex 2018.4.27)  28 MAY 2018 21:13
+This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015/Debian) (preloaded format=xelatex 2018.4.27)  28 MAY 2018 22:13
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1273,13 +1273,8 @@ File: images/Quadcopter_RotorDirection.png Graphic file (type QTm)
 File: images/Quadcopter_Movement.png Graphic file (type QTm)
 
 <use  "images/Quadcopter_Movement.png" >
-(./quadrotor_math_model/euler_quaternion.tex [3]
-File: images/Quadcopter_EulerAngles.png Graphic file (type QTm)
-
-<use  "images/Quadcopter_EulerAngles.png" > [4
-
-])
-(./quadrotor_math_model/quadrotor_model.tex [5
+(./quadrotor_math_model/euler_quaternion.tex [3])
+(./quadrotor_math_model/quadrotor_model.tex [4
 
 ]
 LaTeX Font Info:    Font shape `EU1/THSarabunNew(0)/bx/n' will be
@@ -1287,11 +1282,11 @@ LaTeX Font Info:    Font shape `EU1/THSarabunNew(0)/bx/n' will be
 LaTeX Font Info:    Font shape `EU1/THSarabunNew(0)/bx/n' will be
 (Font)              scaled to size 7.37997pt on input line 54.
 )
-(./quadrotor_math_model/motor_model.tex [6
+(./quadrotor_math_model/motor_model.tex [5
 
-]) [7
+]) [6
 
-] [8
+] [7
 
 ]
 (./hector_quadrotor/hector_quadrotor.tex
@@ -1309,12 +1304,12 @@ LaTeX Font Info:    Font shape `EU1/THSarabunNew(0)/bx/n' will be
 (Font)              scaled to size 6.14998pt on input line 22.
 File: images/hector_quadrotor_render.png Graphic file (type QTm)
 
-<use  "images/hector_quadrotor_render.png" > [9
+<use  "images/hector_quadrotor_render.png" > [8
 
 ]
 File: images/hector_quadrotor_gazebo.png Graphic file (type QTm)
 
-<use  "images/hector_quadrotor_gazebo.png" >) [10
+<use  "images/hector_quadrotor_gazebo.png" >) [9
 
 ]
 บทที่ 3.
@@ -1326,17 +1321,17 @@ File: images/simulink/linear_acce.png Graphic file (type QTm)
 <use  "images/simulink/linear_acce.png" >
 File: images/simulink/angular_acce.png Graphic file (type QTm)
 
-<use  "images/simulink/angular_acce.png" > [11
+<use  "images/simulink/angular_acce.png" > [10
 
 ]
 File: images/simulink/test_hover.png Graphic file (type QTm)
 
-<use  "images/simulink/test_hover.png" > [12
+<use  "images/simulink/test_hover.png" > [11
 
 ]
 File: images/simulink/test_climbup.png Graphic file (type QTm)
 
-<use  "images/simulink/test_climbup.png" >) (./simulation/lqr.tex [13
+<use  "images/simulink/test_climbup.png" >) (./simulation/lqr.tex [12
 
 ]
 File: images/simulink/lqr_all.png Graphic file (type QTm)
@@ -1347,17 +1342,31 @@ File: images/simulink/altitude_control1.png Graphic file (type QTm)
 <use  "images/simulink/altitude_control1.png" >
 File: images/simulink/altitude_control2.png Graphic file (type QTm)
 
-<use  "images/simulink/altitude_control2.png" > [14
+<use  "images/simulink/altitude_control2.png" > [13
 
-])
-(./simulation/rviz_gazebo.tex [15]
+]
+File: images/simulink/attitude_control1.png Graphic file (type QTm)
+
+<use  "images/simulink/attitude_control1.png" > [14]
+File: images/simulink/attitude_control2.png Graphic file (type QTm)
+
+<use  "images/simulink/attitude_control2.png" >
+File: images/simulink/XY_control1.png Graphic file (type QTm)
+
+<use  "images/simulink/XY_control1.png" > [15
+
+]
+File: images/simulink/XY_control2.png Graphic file (type QTm)
+
+<use  "images/simulink/XY_control2.png" >) (./simulation/rviz_gazebo.tex
+[16]
 File: images/test/drone_gazebo.png Graphic file (type QTm)
  <use  "images/test/drone_gazebo.png" >
 LaTeX Font Info:    Font shape `EU1/THSarabunNew(0)/m/n' will be
 (Font)              scaled to size 13.46844pt on input line 17.
 File: images/test/drone_rviz.png Graphic file (type QTm)
 
-<use  "images/test/drone_rviz.png" > [16
+<use  "images/test/drone_rviz.png" > [17
 
 ]
 File: images/test/drone_takeoff.png Graphic file (type QTm)
@@ -1367,7 +1376,7 @@ File: images/test/circle1.png Graphic file (type QTm)
  <use  "images/test/circle1.png" >
 File: images/test/circle2.png Graphic file (type QTm)
 
-<use  "images/test/circle2.png" > [17
+<use  "images/test/circle2.png" > [18
 
 ]
 File: images/test/drone_rg1.png Graphic file (type QTm)
@@ -1377,16 +1386,16 @@ File: images/test/drone_rg2.png Graphic file (type QTm)
 <use  "images/test/drone_rg2.png" >
 File: images/test/drone_rg3.png Graphic file (type QTm)
  <use  "images/test/drone_rg3.png" >)
-[18
+[19
 
 ]
 บทที่ 4.
-[19
+[20
 
 ]
 บทที่ 5.
 No file report.bbl.
-[20
+[21
 
 ]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 146.
@@ -1405,12 +1414,12 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 146.
  ) 
 Here is how much of TeX's memory you used:
- 33963 strings out of 495579
- 640861 string characters out of 6187322
- 736737 words of memory out of 5000000
- 36768 multiletter control sequences out of 15000+600000
+ 33968 strings out of 495579
+ 640983 string characters out of 6187322
+ 736755 words of memory out of 5000000
+ 36770 multiletter control sequences out of 15000+600000
  10475 words of font info for 79 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  62i,13n,63p,10431b,678s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on report.pdf (23 pages).
+Output written on report.pdf (24 pages).
