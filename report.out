@@ -1,34 +1,32 @@
-\BOOKMARK [0][-]{chapter*.1}{บทคัดย่อ}{}% 1
-\BOOKMARK [0][-]{chapter*.3}{สารบัญ}{}% 2
-\BOOKMARK [0][-]{chapter.1}{Introduction}{}% 3
-\BOOKMARK [0][-]{chapter.2}{System\040Description}{}% 4
-\BOOKMARK [1][-]{section.2.1}{Quadroter\040mathematical\040model}{chapter.2}% 5
-\BOOKMARK [2][-]{subsection.2.1.1}{Preliminar\040notions}{section.2.1}% 6
-\BOOKMARK [2][-]{subsection.2.1.2}{Euler\040angles\040and\040Quaternions}{section.2.1}% 7
-\BOOKMARK [2][-]{subsection.2.1.3}{Qaudroter\040mathematical\040model}{section.2.1}% 8
-\BOOKMARK [2][-]{subsection.2.1.4}{Motor\040model}{section.2.1}% 9
-\BOOKMARK [1][-]{section.2.2}{Linear\040Quadratic\040Regulator}{chapter.2}% 10
-\BOOKMARK [1][-]{section.2.3}{Hector\040Quadrotor\040ROS\040Stack}{chapter.2}% 11
-\BOOKMARK [2][-]{subsection.2.3.1}{hector_quadrotor_description}{section.2.3}% 12
-\BOOKMARK [2][-]{subsection.2.3.2}{hector_quadrotor_gazebo}{section.2.3}% 13
-\BOOKMARK [2][-]{subsection.2.3.3}{hector_quadrotor_teleop}{section.2.3}% 14
-\BOOKMARK [2][-]{subsection.2.3.4}{hector_quadrotor_gazebo_plugin}{section.2.3}% 15
-\BOOKMARK [0][-]{chapter.3}{Simulation}{}% 16
-\BOOKMARK [1][-]{section.3.1}{Quadrotor\040simulation\040model}{chapter.3}% 17
-\BOOKMARK [2][-]{subsection.3.1.1}{อัตราการเปลี่ยนแปลงความเร่งเชิงเส้น}{section.3.1}% 18
-\BOOKMARK [2][-]{subsection.3.1.2}{อัตราการเปลี่ยนแปลงความเร่งเชิงมุม}{section.3.1}% 19
-\BOOKMARK [2][-]{subsection.3.1.3}{ผลการทดลอง}{section.3.1}% 20
-\BOOKMARK [3][-]{subsubsection.3.1.3.1}{Hover\040quadrotor}{subsection.3.1.3}% 21
-\BOOKMARK [3][-]{subsubsection.3.1.3.2}{Climb\040up\040quadrotor}{subsection.3.1.3}% 22
-\BOOKMARK [1][-]{section.3.2}{Simulation กับตัวควบคุม Linear Quadratic Regulator}{chapter.3}% 23
-\BOOKMARK [2][-]{subsection.3.2.1}{Altitude\040control}{section.3.2}% 24
-\BOOKMARK [2][-]{subsection.3.2.2}{Attitude\040control}{section.3.2}% 25
-\BOOKMARK [2][-]{subsection.3.2.3}{X\040Y\040Position\040control}{section.3.2}% 26
-\BOOKMARK [1][-]{section.3.3}{Linear Quadratic Regulator กับ Path Planning}{chapter.3}% 27
-\BOOKMARK [1][-]{section.3.4}{Gazebo\040and\040Rviz}{chapter.3}% 28
-\BOOKMARK [2][-]{subsection.3.4.1}{สั่งให้ quadrotor บินขึ้นเหนือพื้น}{section.3.4}% 29
-\BOOKMARK [2][-]{subsection.3.4.2}{สั่งให้ quadrotor บินวนเป็นเกลียว}{section.3.4}% 30
-\BOOKMARK [2][-]{subsection.3.4.3}{สั่งให้ quadrotor บินเป็นรูปดาว}{section.3.4}% 31
-\BOOKMARK [0][-]{chapter.4}{Analysis/Discussion}{}% 32
-\BOOKMARK [0][-]{chapter.5}{Conclusion}{}% 33
-\BOOKMARK [0][-]{chapter.5}{เอกสารอ้างอิง}{}% 34
+\BOOKMARK [0][-]{chapter*.1}{สารบัญ}{}% 1
+\BOOKMARK [0][-]{chapter.1}{Introduction}{}% 2
+\BOOKMARK [0][-]{chapter.2}{System\040Description}{}% 3
+\BOOKMARK [1][-]{section.2.1}{Quadroter\040mathematical\040model}{chapter.2}% 4
+\BOOKMARK [2][-]{subsection.2.1.1}{Preliminar\040notions}{section.2.1}% 5
+\BOOKMARK [2][-]{subsection.2.1.2}{Euler\040angles\040and\040Quaternions}{section.2.1}% 6
+\BOOKMARK [2][-]{subsection.2.1.3}{Qaudroter\040mathematical\040model}{section.2.1}% 7
+\BOOKMARK [2][-]{subsection.2.1.4}{Motor\040model}{section.2.1}% 8
+\BOOKMARK [1][-]{section.2.2}{Linear\040Quadratic\040Regulator}{chapter.2}% 9
+\BOOKMARK [1][-]{section.2.3}{Hector\040Quadrotor\040ROS\040Stack}{chapter.2}% 10
+\BOOKMARK [2][-]{subsection.2.3.1}{hector_quadrotor_description}{section.2.3}% 11
+\BOOKMARK [2][-]{subsection.2.3.2}{hector_quadrotor_gazebo}{section.2.3}% 12
+\BOOKMARK [2][-]{subsection.2.3.3}{hector_quadrotor_teleop}{section.2.3}% 13
+\BOOKMARK [2][-]{subsection.2.3.4}{hector_quadrotor_gazebo_plugin}{section.2.3}% 14
+\BOOKMARK [0][-]{chapter.3}{Simulation}{}% 15
+\BOOKMARK [1][-]{section.3.1}{Quadrotor\040simulation\040model}{chapter.3}% 16
+\BOOKMARK [2][-]{subsection.3.1.1}{อัตราการเปลี่ยนแปลงความเร่งเชิงเส้น}{section.3.1}% 17
+\BOOKMARK [2][-]{subsection.3.1.2}{อัตราการเปลี่ยนแปลงความเร่งเชิงมุม}{section.3.1}% 18
+\BOOKMARK [2][-]{subsection.3.1.3}{ผลการทดลอง}{section.3.1}% 19
+\BOOKMARK [3][-]{subsubsection.3.1.3.1}{Hover\040quadrotor}{subsection.3.1.3}% 20
+\BOOKMARK [3][-]{subsubsection.3.1.3.2}{Climb\040up\040quadrotor}{subsection.3.1.3}% 21
+\BOOKMARK [1][-]{section.3.2}{Simulation กับตัวควบคุม Linear Quadratic Regulator}{chapter.3}% 22
+\BOOKMARK [2][-]{subsection.3.2.1}{Altitude\040control}{section.3.2}% 23
+\BOOKMARK [2][-]{subsection.3.2.2}{Attitude\040control}{section.3.2}% 24
+\BOOKMARK [2][-]{subsection.3.2.3}{X\040Y\040Position\040control}{section.3.2}% 25
+\BOOKMARK [1][-]{section.3.3}{Linear Quadratic Regulator กับ Path Planning}{chapter.3}% 26
+\BOOKMARK [1][-]{section.3.4}{Gazebo\040and\040Rviz}{chapter.3}% 27
+\BOOKMARK [2][-]{subsection.3.4.1}{สั่งให้ quadrotor บินขึ้นเหนือพื้น}{section.3.4}% 28
+\BOOKMARK [2][-]{subsection.3.4.2}{สั่งให้ quadrotor บินวนเป็นเกลียว}{section.3.4}% 29
+\BOOKMARK [2][-]{subsection.3.4.3}{สั่งให้ quadrotor บินเป็นรูปดาว}{section.3.4}% 30
+\BOOKMARK [0][-]{chapter.4}{Conclusion}{}% 31
+\BOOKMARK [0][-]{chapter*.25}{เอกสารอ้างอิง}{}% 32

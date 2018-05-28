@@ -20,30 +20,13 @@
 
 \maketitle
 \frontmatter
-\input{pages/abstract}
+% \input{pages/abstract}
 \tableofcontents
 % \listoffigures
 % \listoftables
 % \input{pages/symbols}
 % \input{pages/abbreviations}
 
-
-
-
-% \begin{figure}[ht]
-% 	\centering
-% 	\includegraphics[width=0.5\textwidth]{Images/maplestory_1.jpg}
-% 	\caption{Example of a parametric plot ($\sin (x), \cos(x), x$)}
-% \end{figure}
-% \begin{Verbatim}
-% 	% dskfaosdlfk
-% 	#include <stdio.h>
-% 	int main()
-% 	{
-% 		printf("Hello World");
-% 		return 0;
-% 	}
-% \end{Verbatim}
 \mainmatter
 \chapter{Introduction}
 อากาศยานสี่ใบพัด (quadrotor) คือเฮลิคอปเตอร์หลายใบพัด (multi-helicopter) ที่มีลักษณะใบพัดเรียงตัวกันเป็นรูปสี่เหลื่ยมมุมฉาก
@@ -113,31 +96,30 @@
 	\label{fig:quadroter_movement}
 \end{figure}
 
-
 \input{quadrotor_math_model/euler_quaternion}
 \input{quadrotor_math_model/quadrotor_model}
 \input{quadrotor_math_model/motor_model}
-
-
-% https://www2.eecs.berkeley.edu/Pubs/TechRpts/2012/EECS-2012-241.pdf
-% https://www.kth.se/polopoly_fs/1.588039!/Thesis%20KTH%20-%20Francesco%20Sabatino.pdf
-
 \input{quadrotor_math_model/lqr}
 
 \clearpage
 \section{Hector Quadrotor ROS Stack}
 \input{hector_quadrotor/hector_quadrotor}
 
-
 \chapter{Simulation}
-
 \input{simulation/matlab}
 \input{simulation/lqr}
 \input{simulation/combine}
 \input{simulation/rviz_gazebo}
 
-\chapter{Analysis/Discussion}
+% \chapter{Analysis/Discussion}
 \chapter{Conclusion}
+เนื่องจาก Quadrotor เป็นอากาศยานที่มีความซับซ้อนและน่าสนใจ ดังนั้นถ้าหากเรารู้จักระบบของมันได้เป็นอย่างดี 
+จะทำให้เราสามารถใช้ประโยชน์จากศักยภาพของด้วยได้อย่างเต็มประสิทธิภาพ
+จากการทดลองที่ผ่านมาทั้งหมด สามารถสรุปว่าแบบจำลอง Quadrotor ที่ออกแบบนั้นสามารถนำมาใช้ในการควบคุมได้, ตัวควบคุม Quadrotor
+ที่ใช้มีประสิทธิ์ภาพเพียงพอต่อการใช้งานและสามารถควบคุมสถานะต่างๆของ Quadrotor ได้
+และสุดท้าย Path planning สามารถสร้างเส้นทางการบินของ Quadrotor ได้
+การทำงานทุกส่วนสามารถนำมาใช้งานร่วมกันได้ ทำให้เราได้ระบบจำลองและระบบควบคุมเพื่อทดสอบระบบก่อนนำไปประยุกต์ใช้งานกับระบบจริงต่อในอนาคต
+ซึ่งทั้งหมดเป็นผลที่เกิดมาจากการเรียนรายวิชา Principles of Model-based Design ที่ทำให้ได้ศึกษาและเข้าใจอากาศยานสีใบพัด
 
 
 \nocite{*}
