@@ -33,17 +33,29 @@ $\nu_{B} = [\begin{matrix}u & v & w \end{matrix}]^T$, $\omega_{B} = [\begin{matr
 		\dot{x}  \\
 		\dot{y}  \\
 		\dot{z} \\
+		u\\
+		v\\
+		w\\
 		\dot{\phi} \\
 		\dot{\theta} \\
 		\dot{\psi} \\
+		p\\
+		q\\
+		r\\
 		\end{bmatrix} = 
 		\begin{bmatrix}
 			w[s(\phi)s(\psi)+c(\phi)c(\psi)s(\theta)]-v[c(\phi)s(\psi)-c(\psi)s(\phi)s(\theta)]+u[c(\psi)c(\theta)] \\
 			v[c(\phi)c(\psi)+s(\phi)s(\psi)s(\theta)]-w[c(\psi)s(\phi)-c(\phi)s(\psi)s(\theta)]+u[c(\theta)s(\psi)] \\
 			w[c(\phi)c(\theta)]-u[s(\theta)]+v[c(\theta)s(\phi)]                                                    \\
+			rv-qw-gs(\theta)\\
+			pw-ru+gc(\theta)s(\theta)\\
+			qu-pv+gc(\theta)s(\theta)-F/m\\
 			p+r[c(\phi)t(\theta)]+q[s(\phi)t(\theta)]                                                               \\
 			q[c(\phi)]-r[s(\phi)]                                                                                   \\
 			r\dfrac{c(\phi)}{c(\theta)}+q\dfrac{s(\phi)}{c(\theta)}                                                 \\
+			\frac{I_y-I_z}{I_x}qr+\frac{\tau_\phi}{I_x}\\
+			\frac{I_z-I_x}{I_y}pr+\frac{\tau_\theta}{I_y}\\
+			\frac{I_x-I_y}{I_z}pq+\frac{\tau_\psi}{I_z}\\
 		\end{bmatrix}	}
 	\label{equ:kinematic model}
 \end{equation}
