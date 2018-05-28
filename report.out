@@ -14,9 +14,19 @@
 \BOOKMARK [2][-]{subsection.2.3.3}{hector_quadrotor_teleop}{section.2.3}% 14
 \BOOKMARK [2][-]{subsection.2.3.4}{hector_quadrotor_gazebo_plugin}{section.2.3}% 15
 \BOOKMARK [0][-]{chapter.3}{Simulation}{}% 16
-\BOOKMARK [1][-]{section.3.1}{สั่งให้ quadrotor บินขึ้นเหนือพื้น}{chapter.3}% 17
-\BOOKMARK [1][-]{section.3.2}{สั่งให้ quadrotor บินวนเป็นเกลียว}{chapter.3}% 18
-\BOOKMARK [1][-]{section.3.3}{สั่งให้ quadrotor บินเป็นรูปดาว}{chapter.3}% 19
-\BOOKMARK [0][-]{chapter.4}{Analysis/Discussion}{}% 20
-\BOOKMARK [0][-]{chapter.5}{Conclusion}{}% 21
-\BOOKMARK [0][-]{chapter.5}{เอกสารอ้างอิง}{}% 22
+\BOOKMARK [1][-]{section.3.1}{Quadrotor\040simulation\040model}{chapter.3}% 17
+\BOOKMARK [2][-]{subsection.3.1.1}{อัตราการเปลี่ยนแปลงความเร่งเชิงเส้น}{section.3.1}% 18
+\BOOKMARK [2][-]{subsection.3.1.2}{อัตราการเปลี่ยนแปลงความเร่งเชิงมุม}{section.3.1}% 19
+\BOOKMARK [2][-]{subsection.3.1.3}{ผลการทดลอง}{section.3.1}% 20
+\BOOKMARK [3][-]{subsubsection.3.1.3.1}{Hover\040quadrotor}{subsection.3.1.3}% 21
+\BOOKMARK [3][-]{subsubsection.3.1.3.2}{Climb\040up\040quadrotor}{subsection.3.1.3}% 22
+\BOOKMARK [1][-]{section.3.2}{Simulation กับตัวควบคุม Linear Quadratic Regulator}{chapter.3}% 23
+\BOOKMARK [2][-]{subsection.3.2.1}{Altitude\040control}{section.3.2}% 24
+\BOOKMARK [2][-]{subsection.3.2.2}{Attitude\040control}{section.3.2}% 25
+\BOOKMARK [1][-]{section.3.3}{Gazebo\040and\040Rviz}{chapter.3}% 26
+\BOOKMARK [2][-]{subsection.3.3.1}{สั่งให้ quadrotor บินขึ้นเหนือพื้น}{section.3.3}% 27
+\BOOKMARK [2][-]{subsection.3.3.2}{สั่งให้ quadrotor บินวนเป็นเกลียว}{section.3.3}% 28
+\BOOKMARK [2][-]{subsection.3.3.3}{สั่งให้ quadrotor บินเป็นรูปดาว}{section.3.3}% 29
+\BOOKMARK [0][-]{chapter.4}{Analysis/Discussion}{}% 30
+\BOOKMARK [0][-]{chapter.5}{Conclusion}{}% 31
+\BOOKMARK [0][-]{chapter.5}{เอกสารอ้างอิง}{}% 32
